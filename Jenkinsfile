@@ -3,7 +3,7 @@ pipeline {
     agent any 
     stages {
 	stage ('Lint HTML') {
-		steps {
+		step {
 	    		tidy -q -e *.html
 	              }	
 		}
